@@ -7,35 +7,85 @@
     
     <title>JavaScript Quiz</title>
     <!-- Icon in title Bar -->
-    <link rel = "icon" href = "#" type = "image/x-icon">
+    <link rel = "icon" href = "javascript_logo.png" type = "image/x-icon">
     <!-- CSS file -->
     <link rel="stylesheet" href="styles.css">
     <!-- Javascript file -->
     <script src = "index.js" defer></script>
+    <!-- Questions File -->
+    <script src = "ques.js" defer></script>
 </head>
 <body>
     
-    <!-- Start Button for Quiz -->
-    <div class="start-btn">
+    <!-- Start Quiz page -->
+    <div class="welcome">
+        <h1>Welcome to this <br> JavaScript Quiz page</h1>
+
+    </div>
+    <div class="start_btn">
         <button>Start Quiz</button>
     </div>
-
     <!-- Instructions for giving the Quiz-->
-    <div class="info">
-        <div class="info-title"><span>Instructions for the Quiz</span></div>
+    <div class="info_box">
+        <div class="info-title"><span>Instructions for the Quiz :- </span></div>
         <div class="info-list">
-            <ul>
-                <li>Number of Questions :- 10</li>
-                <li>Duration of Test :- 15 minutes</li>
-                <li>Marks per Question :- 1</li>
+            <ul class = "info">
+                <li>Number of Questions -> 10</li>
+                <li>Duration of Test -> 15 minutes</li>
+                <li>Marks per Question -> 1 marks</li>
                 <li>No Negative marking.</li>
             </ul>
         </div>
         <div class="buttons">
             <button class="quit">Go Back</button>
-            <button class="start">Continue</button>
+            <button class="restart">Continue</button>
         </div>
     </div>
+
+    <!-- Quiz Main Page Interface -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">JavaScript Quiz Web Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+
+        <section>
+            <div class="que_text">
+                <!--Question Here-->
+            </div>
+            <div class="option_list">
+                <!-- Options Here-->
+            </div>
+        </section>
+
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+
+            <button class="next_btn">Save and Next</button>
+        </footer>
+    </div>
+    
+    <!-- Results Page -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Score Result is inserted from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
 
 </body>
 </html>
