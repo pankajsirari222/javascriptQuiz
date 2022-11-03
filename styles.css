@@ -16,6 +16,7 @@ body{
     text-align: center;
     color: white;
 }
+
 .start_btn,
 .info_box,
 .quiz_box,
@@ -28,11 +29,10 @@ body{
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.info_box.activeInfo,
+.info_box.activate,
 .quiz_box.activeQuiz,
 .result_box.activeResult{
     opacity: 1;
-    z-index: 5;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
 }
@@ -244,14 +244,12 @@ section .option_list .option .icon{
     line-height: 24px;
 }
 .option_list .option .icon.tick{
-    color: #23903c;
-    border-color: #23903c;
-    background: #d4edda;
+    border-color: #097523;
+    background: green;
 }
 
 .option_list .option .icon.cross{
-    color: #a42834;
-    background: #f8d7da;
+    background: red;
     border-color: #a42834;
 }
 
