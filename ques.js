@@ -24,7 +24,7 @@ let questions = [
 },
   {
   numb: 3,
-  question: "What will be the output of the following code? <br><br> \< script \>  <br> document.write( typeof( '1' + 2)); <br> \< /script \>",
+  question: "What will be the output of the following code? <br><br> <div class='code'> \< script \>  <br> document.write( typeof( '1' + 2)); <br> \< /script \> </div>",
   answer: "'string'",
   options: [
     "'boolean'",
@@ -35,7 +35,7 @@ let questions = [
 },
   {
   numb: 4,
-  question: 'What will be the output of the following code snippet let str="Hello World" console.log(str.charAt(7))',
+  question: 'What will be the output of the following code snippet? <br><br> <div class = "code"> let str="Hello World" <br>console.log(str.charAt(7))</div>',
   answer: "o",
   options: [
     "W",
@@ -46,7 +46,7 @@ let questions = [
 },
   {
   numb: 5,
-  question: "Which of the following method can also be used to create objects in javascript ",
+  question: "Which of the following method can also be used to create objects in javascript?",
   answer: "Both a and b",
   options: [
     "new keyword",

@@ -213,44 +213,23 @@ section .option_list .option:last-child{
 section .option_list .option:hover{
     color: #004085;
     background: #cce5ff;
-    border: 1px solid #b8daff;
+    border: 1px solid #a0c9f6;
 }
 
 section .option_list .option.correct{
-    color: #155724;
+    color: #08d538;
     background: #d4edda;
-    border: 1px solid #c3e6cb;
+    border: 1px solid #08d538;
 }
 
 section .option_list .option.incorrect{
-    color: #721c24;
+    color: #ff172e;
     background: #f8d7da;
-    border: 1px solid #f5c6cb;
+    border: 1px solid #ff172e;
 }
 
 section .option_list .option.disabled{
     pointer-events: none;
-}
-
-section .option_list .option .icon{
-    height: 26px;
-    width: 26px;
-    border: 2px solid transparent;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 13px;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    line-height: 24px;
-}
-.option_list .option .icon.tick{
-    border-color: #097523;
-    background: green;
-}
-
-.option_list .option .icon.cross{
-    background: red;
-    border-color: #a42834;
 }
 
 footer{
@@ -379,4 +358,8 @@ footer button.show{
 .buttons button.quit:hover{
     color: #fff;
     background: #007bff;
+}
+.code {
+    background-color: #a1c1e3;
+    font-family: cursive;
 }
