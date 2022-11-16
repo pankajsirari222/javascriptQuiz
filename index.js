@@ -9,6 +9,7 @@ const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
+const welcome = document.querySelector(".welcome");
 
 // if startQuiz button clicked
 start_btn.onclick = ()=>{
@@ -60,6 +61,7 @@ restart_quiz.onclick = ()=>{
 // if quitQuiz button clicked
 quit_quiz.onclick = ()=>{
     window.location.reload(); //reload the current window
+    welcome.classList.remove("welcometext");
 }
 
 const next_btn = document.querySelector("footer .next_btn");
@@ -103,6 +105,7 @@ function showQues(index){
     for(i=0; i < option.length; i++){
         option[i].setAttribute("onclick", "optionSelected(this)");
     }
+    welcome.classList.add("welcometext");
 }
 // creating the new div tags for icons on selecting option
 let tickIconTag = '<div class="tick" > &#10004; </div>';
